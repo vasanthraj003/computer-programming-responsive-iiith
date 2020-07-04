@@ -3,7 +3,23 @@
 <head>
 <link rel = 'stylesheet' type = 'text/css' href = 'array.css' />
 <!-- <link href = 'http://fonts.googleapis.com/css?family=Inconsolata' rel = 'stylesheet' type = 'text/css' > -->
+<script src="jquery-3.5.1.js"></script>
 <script src = 'array.js' ></script>
+<script>
+	$(document).ready(function()
+{
+	$("#btnRandom").click(function()
+	{
+		$("#userInput").prop('readonly',true);
+	});
+	$("#btnManual").click(function()
+	{
+		$("#userInput").prop('readonly',false);
+	});
+});
+
+
+</script>
 <title>Computer-Programming</title>
 </head>
 
